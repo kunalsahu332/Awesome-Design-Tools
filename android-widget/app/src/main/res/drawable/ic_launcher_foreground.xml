@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Simple pen-nib style mark -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,30 L70,54 L58,78 L50,78 L38,54 Z" />
+    <path
+        android:fillColor="#FF6750A4"
+        android:pathData="M54,48 m-4,0 a4,4 0,1 1,8 0 a4,4 0,1 1,-8 0" />
+    <path
+        android:fillColor="#FF6750A4"
+        android:pathData="M53,52 L55,52 L55,76 L53,76 Z" />
+</vector>

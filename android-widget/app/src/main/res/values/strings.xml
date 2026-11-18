@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Design Tool Widget</string>
+    <string name="widget_name">Design Tool of the Day</string>
+    <string name="widget_description">A new design tool from Awesome Design Tools every day. Tap to open it, shuffle for another.</string>
+    <string name="shuffle">Show another tool</string>
+    <string name="open_tool">Open %1$s</string>
+    <string name="main_intro">Long-press your home screen, choose Widgets, and add \"Design Tool of the Day\". Or tap the button below.</string>
+    <string name="main_pin">Add widget to home screen</string>
+    <string name="main_pin_unsupported">Your launcher doesn\'t support adding widgets from apps. Add it from the home screen\'s widget picker instead.</string>
+</resources>

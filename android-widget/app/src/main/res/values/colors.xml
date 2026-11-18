@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="preview_bg">#FFF4EFFA</color>
+    <color name="preview_accent">#FF6750A4</color>
+    <color name="preview_text">#FF1D1B20</color>
+    <color name="preview_subtext">#FF49454F</color>
+    <color name="ic_launcher_background">#FF6750A4</color>
+</resources>

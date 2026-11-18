@@ -1,0 +1,38 @@
+name: Android widget
+
+on:
+  push:
+    paths:
+      - "android-widget/**"
+      - "README.md"
+      - ".github/workflows/android-widget.yml"
+  pull_request:
+    paths:
+      - "android-widget/**"
+      - "README.md"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: android-widget
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Refresh tool list from README
+        run: node scripts/extract-tools.js
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Build debug APK
+        run: ./gradlew --no-daemon assembleDebug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: design-tool-widget-apk
+          path: android-widget/app/build/outputs/apk/debug/app-debug.apk
